@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@layer components {
+	.productItemInteract {
+		display: flex;
+		gap: 0.5rem;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: center;
+	}
+	.productItemInteractIcon {
+		width: 0.775 rem;
+		aspect-ratio: 1/1;
+	}
+}
+
+@layer base {
+	button,
+	a {
+		cursor: pointer;
+	}
+}
