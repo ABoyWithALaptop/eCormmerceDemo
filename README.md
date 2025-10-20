@@ -1,73 +1,67 @@
-# React + TypeScript + Vite
+# E-commerce Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project of an art-driven E-commerce platform for an interior design brand, balancing aesthetic expression with practical user experience and conversion optimization
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Overview](#overview)
+- [Implementation and Deployment](#implementation-and-deployment)
+- [Project Checklist](#project-checklist)
 
-## React Compiler
+## Overview
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+This E-commerce project was developed for a high-end interior and architecture company, aiming to deliver an online experience that blends artistic expression with commercial functionality.
+The website serves as an online gallery that reflects the brand’s creative spirit and design philosophy, while integrating modern E-commerce features such as product management, shopping cart, checkout, and content management system.
 
-## Expanding the ESLint configuration
+In addition to performance and SEO optimization for organic traffic, the project emphasizes user experience (UX) — ensuring a seamless, elegant, and brand-consistent interaction.
+The ultimate goal is to transform aesthetics into an inspiring shopping journey, allowing customers to explore, connect, and engage with the brand’s artistic products effortlessly.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Implementation and Deployment
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+This part of document guide user to set up the project and deploy it on their own environment.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Steps
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/ABoyWithALaptop/eCormmerceDemo.git
+cd eCormmerceDemo
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. **Install dependencies**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+3. **Start the development server**
+
+```bash
+npm run dev
+```
+
+## **Project Checklist**
+
+**_Frontend_**
+
+- [x] responsive for mobile and tablet for landing page
+- [ ] admin panel
+- [ ] animation for landing page
+- [ ] product page
+- [ ] cart page
+- [ ] checkout page
+- [ ] content management system
+- [ ] performance optimization
+- [ ] SEO optimization
+- [ ] user experience optimization
+
+**_Backend_**
+
+- [ ] set up
+- [ ] CRUD apis
+- [ ] database
+- [ ] authentication for staffs
+- [ ] product management storage
+- [ ] payment confirmation
+- [ ] content management system
