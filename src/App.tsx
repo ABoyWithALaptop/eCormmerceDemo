@@ -1,4 +1,5 @@
 import "./App.css";
+import FurnitureShareSlider from "./components/FurnitureShareSlider";
 import HeroLanding from "./components/HeroLanding";
 import InspirationList from "./components/InspirationList";
 import NavBar from "./components/NavBar";
@@ -127,6 +128,7 @@ function App() {
 						},
 					]}
 				/>
+				<FurnitureShareSlider />
 			</div>
 		</>
 	);

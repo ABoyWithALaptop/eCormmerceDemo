@@ -8,7 +8,10 @@ const ProductList: FC<{ listProduct: productType[] }> = ({ listProduct }) => {
 			<h2 className="font-bold text-4xl">Our Product</h2>
 			<div className="flex flex-wrap justify-center gap-8">
 				{listProduct.map((product) => (
-					<ProductItem product={product} />
+					<ProductItem
+						product={product}
+						key={product.fullName + product.price}
+					/>
 				))}
 			</div>
 			<button className="mt-8 text-[#B88E2F] py-3 px-20 border border-[#B88E2F] text-base font-semibold">

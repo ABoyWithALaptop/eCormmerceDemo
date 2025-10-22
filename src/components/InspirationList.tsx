@@ -58,7 +58,7 @@ const Carousel: FC<{ list: inspirationCardType[]; className?: string }> = ({
 const InspirationList: FC<{ list: inspirationCardType[] }> = ({ list }) => {
 	// const [];
 	return (
-		<div className="h-[80vh]  bg-[#FCF8F3] flex items-center justify-around px-6">
+		<div className="h-[80vh]  bg-[#FCF8F3] flex items-center justify-around px-6 mt-16">
 			<div className="w-1/2 inline-block">
 				<h3 className="font-bold text-4xl">50+ Beautiful rooms inspiration</h3>
 				<p>

@@ -14,7 +14,10 @@ const RangeProductSection: FC<{ segmentList: productSegmentType[] }> = ({
 			<sub>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</sub>
 			<ul className="flex items-center align-middle justify-center gap-2 pt-16">
 				{segmentList.map((segment) => (
-					<li className="flex flex-col gap-8 items-center">
+					<li
+						className="flex flex-col gap-8 items-center"
+						key={segment.segment}
+					>
 						<img
 							src={`src/assets/segmentProduct/${segment.segment}.jpg`}
 							className="rounded-xl"
