@@ -12,7 +12,7 @@ type linkRoute = {
 
 const NavBar: FC<{ links: linkRoute[] }> = ({ links }) => {
 	return (
-		<div className="flex w-full justify-between px-14 py-7 sticky top-0 left-0 right-0 bg-white  border-b border-gray-200 z-99">
+		<nav className="flex w-full justify-between items-center px-14 py-7 sticky top-0 left-0 right-0 bg-white  border-b border-gray-200 z-99">
 			<section className="flex items-center gap-2">
 				<img src={logo} alt="logo" />
 				<h1 className="text-3xl font-bold">Furniro</h1>
@@ -32,7 +32,7 @@ const NavBar: FC<{ links: linkRoute[] }> = ({ links }) => {
 				<img src={bookmarkIcon} alt="bookmarkIcon" className="w-6" />
 				<img src={cartIcon} alt="cartIcon" className="w-6" />
 			</section>
-		</div>
+		</nav>
 	);
 };
 

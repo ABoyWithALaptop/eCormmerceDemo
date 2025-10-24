@@ -1,22 +1,12 @@
-import "./App.css";
-import FurnitureShareSlider from "./components/FurnitureShareSlider";
-import HeroLanding from "./components/HeroLanding";
-import InspirationList from "./components/InspirationList";
-import NavBar from "./components/NavBar";
-import ProductList from "./components/ProductList";
-import RangeProductSection from "./components/RangeProductSection";
+import FurnitureShareSlider from "@components/FurnitureShareSlider";
+import HeroLanding from "@components/HeroLanding";
+import InspirationList from "@components/InspirationList";
+import ProductList from "@components/ProductList";
+import RangeProductSection from "@components/RangeProductSection";
 
-function App() {
+function LandingPage() {
 	return (
 		<>
-			<NavBar
-				links={[
-					{ name: "Home", route: "/" },
-					{ name: "Shop", route: "/shop" },
-					{ name: "About", route: "/about" },
-					{ name: "Contact", route: "/contact" },
-				]}
-			/>
 			<HeroLanding />
 			<div className="text-center mx-32 mt-14">
 				<RangeProductSection
@@ -134,4 +124,4 @@ function App() {
 	);
 }
 
-export default App;
+export default LandingPage;

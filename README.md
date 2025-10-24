@@ -45,7 +45,10 @@ npm run dev
 
 **_Frontend_**
 
-- [x] responsive for mobile and tablet for landing page
+- [x] setting up routing with react-router
+- [x] basic layout with header and footer
+- [x] basic screen for landing page (missing animation and some slider)
+- [ ] responsive for mobile and tablet for landing page
 - [ ] admin panel
 - [ ] animation for landing page
 - [ ] product page

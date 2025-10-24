@@ -1,0 +1,5 @@
+@import "../../App.css";
+
+.title {
+	@apply font-semibold text-sm text-[#9F9F9F] p-20;
+}
