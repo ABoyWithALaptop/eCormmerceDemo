@@ -14,20 +14,27 @@ type Pages = {
   "/": {
     params: {};
   };
+  "/products": {
+    params: {};
+  };
 };
 
 type RouteFiles = {
   "root.tsx": {
     id: "root";
-    page: "/";
+    page: "/" | "/products";
   };
   "./layouts/Layout.tsx": {
     id: "layouts/Layout";
-    page: "/";
+    page: "/" | "/products";
   };
   "./routes/Landing.tsx": {
     id: "routes/Landing";
     page: "/";
+  };
+  "./routes/Products.tsx": {
+    id: "routes/Products";
+    page: "/products";
   };
 };
 
@@ -35,4 +42,5 @@ type RouteModules = {
   "root": typeof import("./src/root.tsx");
   "layouts/Layout": typeof import("./src/./layouts/Layout.tsx");
   "routes/Landing": typeof import("./src/./routes/Landing.tsx");
+  "routes/Products": typeof import("./src/./routes/Products.tsx");
 };

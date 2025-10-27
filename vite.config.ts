@@ -8,7 +8,7 @@ export default defineConfig({
 	plugins: [tailwindcss(), reactRouter()],
 	resolve: {
 		alias: [
-			{ find: "@", replacement: path.resolve(__dirname, "src") },
+			{ find: "@", replacement: path.resolve(__dirname, "./src") },
 			{
 				find: "@components",
 				replacement: path.resolve(__dirname, "src/components"),
