@@ -16,6 +16,10 @@ export default defineConfig({
 			{ find: "@pages", replacement: path.resolve(__dirname, "src/pages") },
 			{ find: "@api", replacement: path.resolve(__dirname, "src/api") },
 			{ find: "@utils", replacement: path.resolve(__dirname, "src/utils") },
+			{
+				find: "@ui",
+				replacement: path.resolve(__dirname, "src/components/ui"),
+			},
 		],
 	},
 });
